@@ -60,3 +60,18 @@
 .logo span {
   color: var(--text-dark);
 }
+
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
