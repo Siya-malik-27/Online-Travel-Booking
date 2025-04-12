@@ -46,3 +46,17 @@
   transition: 0.3s;
   cursor: pointer;
 }
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.logo span {
+  color: var(--text-dark);
+}
