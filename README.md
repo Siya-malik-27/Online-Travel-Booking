@@ -1,6 +1,6 @@
-# 🌍 TravelEase — Travel Booking Website
+# 🌍 TravelDream — Travel Booking Website
 
-Welcome to **TravelEase**, a simple and intuitive web platform for booking flights, hotels, and holiday packages. Plan your next adventure hassle-free with our easy-to-use booking system and travel guides!
+Welcome to **TravelDream**, a simple and intuitive web platform for booking flights, hotels, and holiday packages. Plan your next adventure hassle-free with our easy-to-use booking system and travel guides!
 
 ---
 
