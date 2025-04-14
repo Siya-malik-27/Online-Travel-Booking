@@ -143,3 +143,24 @@ nav {
 .nav__links a:hover {
   color: var(--primary-color);
 }
+
+header {
+  padding-block: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/header.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__container h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 5rem;
+}
+
+.header__container h1 span {
+  font-size: 5.5rem;
+}
