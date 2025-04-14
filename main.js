@@ -46,3 +46,11 @@ ScrollReveal().reveal(".package__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
