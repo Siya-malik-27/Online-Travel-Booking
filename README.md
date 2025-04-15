@@ -24,11 +24,8 @@ Welcome to **TravelDream**, a simple and intuitive web platform for booking flig
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript (or React/Vue if applicable)
-- **Backend**: Node.js, Express (or Django/Flask/PHP)
-- **Database**: MongoDB / MySQL
-- **APIs**: (e.g., Amadeus Travel API, payment gateways)
-- **Version Control**: Git & GitHub
-
+-  HTML  
+-  CSS
+-  JavaScript 
 ---
 
