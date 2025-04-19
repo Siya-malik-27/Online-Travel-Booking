@@ -179,3 +179,17 @@ header {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+header_container .input_group {
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.header_container .input_group span {
+  padding: 6px 10px;
+  font-size: 1.25rem;
+  color: var(--white);
+  background-color: var(--text-dark);
+}
