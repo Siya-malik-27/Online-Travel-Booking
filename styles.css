@@ -193,3 +193,16 @@ header_container .input_group {
   color: var(--white);
   background-color: var(--text-dark);
 }
+
+.header__container input {
+  width: 100%;
+  padding-inline: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.header__container .btn {
+ width: 100%;
+}
