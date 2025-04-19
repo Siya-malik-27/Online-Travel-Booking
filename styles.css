@@ -164,3 +164,18 @@ header {
 .header__container h1 span {
   font-size: 5.5rem;
 }
+
+
+.header__container p {
+  margin-bottom: 5rem;
+  font-size: 8rem;
+  font-family: var(--header-font);
+  color: var(--white);
+}
+
+.header__container form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
