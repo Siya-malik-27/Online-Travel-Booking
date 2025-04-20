@@ -310,3 +310,17 @@ header_container .input_group {
 .discount__container h2 span {
   font-size: 2rem;
 }
+
+.package__grid {
+  margin-top: -2rem;
+  display: flex;
+  gap: 0;
+}
+
+.package__card {
+  box-shadow: none;
+}
+
+.package_card_details {
+  padding: 0;
+}
