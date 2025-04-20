@@ -206,3 +206,17 @@ header_container .input_group {
 .header__container .btn {
  width: 100%;
 }
+
+.feature__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.feature__card {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--white);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
