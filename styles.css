@@ -257,3 +257,14 @@ header_container .input_group {
   opacity: 0.2;
   z-index: -1;
 }
+
+.destination__grid {
+  margin-top: -2rem;
+  display: grid;
+  gap: 4rem;
+}
+
+.destination__card {
+  position: relative;
+  isolation: isolate;
+ }
