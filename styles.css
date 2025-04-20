@@ -220,3 +220,19 @@ header_container .input_group {
   background-color: var(--white);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 }
+
+.feature__card img {
+  max-width: 70px;
+}
+
+.feature__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.feature__card p {
+  color: var(--text-light);
+  line-height: 1.5rem;
+}
