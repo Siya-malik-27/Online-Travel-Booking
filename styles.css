@@ -236,3 +236,35 @@ header_container .input_group {
   color: var(--text-light);
   line-height: 1.5rem;
 }
+
+.destination {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.destination::before {
+  position: absolute;
+  content: "TRAVEL";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-100%);
+  font-size: 20rem;
+  font-weight: 900;
+  line-height: 14rem;
+  letter-spacing: -30px;
+  color: var(--text-light);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.destination__grid {
+  margin-top: -2rem;
+  display: grid;
+  gap: 4rem;
+}
+
+.destination__card {
+  position: relative;
+  isolation: isolate;
+ }
