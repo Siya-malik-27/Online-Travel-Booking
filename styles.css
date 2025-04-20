@@ -298,3 +298,15 @@ header_container .input_group {
 .discount__container {
   text-align: justify;
 }
+
+.discount__container h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--header-font);
+  color: var(--white);
+}
+
+.discount__container h2 span {
+  font-size: 2rem;
+}
