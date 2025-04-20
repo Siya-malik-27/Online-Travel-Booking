@@ -268,3 +268,21 @@ header_container .input_group {
   position: relative;
   isolation: isolate;
  }
+
+ .destination__content {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.destination_card:hover .destination_content {
+  opacity: 0.5;
+}
