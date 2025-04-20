@@ -227,7 +227,7 @@ header_container .input_group {
 
 .feature__card h4 {
   margin-bottom: 0.5rem;
-  font-size: 3.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-dark);
 }
