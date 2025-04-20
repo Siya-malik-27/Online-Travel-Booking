@@ -286,3 +286,15 @@ header_container .input_group {
 .destination_card:hover .destination_content {
   opacity: 0.5;
 }
+
+.discount {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("asset/discount.jpg");
+  background-size: 200%;
+  background-position: top left;
+  background-repeat: repeat;
+}
+
+.discount__container {
+  text-align: justify;
+}
