@@ -168,7 +168,7 @@ header {
 
 .header__container p {
   margin-bottom: 5rem;
-  font-size: 8rem;
+  font-size: 2rem;
   font-family: var(--header-font);
   color: var(--white);
 }
