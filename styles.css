@@ -352,3 +352,12 @@ header_container .input_group {
   color: var(--primary-color);
   font-family: var(--header-font);
 }
+
+.swiper {
+  width: 100%;
+  padding-block: 4rem;
+}
+
+.swiper-slide {
+  max-width: calc((var(--max-width) / 3) - 1.5rem);
+}
