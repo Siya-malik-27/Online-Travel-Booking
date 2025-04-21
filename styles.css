@@ -190,7 +190,7 @@ header_container .input_group {
 .header_container .input_group span {
   padding: 6px 10px;
   font-size: 1.25rem;
-  color: var(--white);
+  color: var(--light-text);
   background-color: var(--text-dark);
 }
 
