@@ -388,3 +388,16 @@ header_container .input_group {
   color: var(--text-light);
   line-height: 1.5rem;
 }
+
+.client__card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.client__card h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--header-font);
+  color: var(--text-light);
+}
