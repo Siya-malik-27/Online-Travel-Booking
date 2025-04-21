@@ -324,3 +324,31 @@ header_container .input_group {
 .package_card_details {
   padding: 0;
 }
+
+.package_card_details h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.package_card_details p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  line-height: 1.5rem;
+}
+
+.package_card_details > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.package_card_details h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-family: var(--header-font);
+}
