@@ -209,7 +209,7 @@ header_container .input_group {
 
 .feature__container {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .feature__card {
