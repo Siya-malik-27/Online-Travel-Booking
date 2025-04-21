@@ -337,3 +337,18 @@ header_container .input_group {
   color: var(--text-light);
   line-height: 1.5rem;
 }
+
+.package_card_details > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.package_card_details h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-family: var(--header-font);
+}
