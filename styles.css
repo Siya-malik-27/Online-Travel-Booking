@@ -361,3 +361,43 @@ header_container .input_group {
 .swiper-slide {
   max-width: calc((var(--max-width) / 3) - 1.5rem);
 }
+
+.client__card {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.client__card img {
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.client__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.client__card p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  line-height: 1.5rem;
+}
+
+.client__card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.client__card h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--header-font);
+  color: var(--text-light);
+}
