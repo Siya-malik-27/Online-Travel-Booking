@@ -401,3 +401,21 @@ header_container .input_group {
   font-family: var(--header-font);
   color: var(--text-light);
 }
+
+.subscribe {
+  padding-block: 5rem;
+  background-color: var(--primary-color-dark);
+}
+
+.subscribe__container {
+  display: gird;
+  gap: 2rem;
+  text-align: cetner;
+}
+
+.subscribe__container h2 {
+  font-size: 2.75rem;
+  font-weight: 900;
+  font-family: var(--header-font);
+  color: transparent;
+}
