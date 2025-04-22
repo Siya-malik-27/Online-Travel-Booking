@@ -259,9 +259,9 @@ header_container .input_group {
 }
 
 .destination__grid {
-  margin-top: -2rem;
+  margin-top: 4rem;
   display: grid;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .destination__card {
