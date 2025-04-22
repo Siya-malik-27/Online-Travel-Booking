@@ -412,3 +412,10 @@ header_container .input_group {
   gap: 2rem;
   text-align: cetner;
 }
+
+.subscribe__container h2 {
+  font-size: 2.75rem;
+  font-weight: 900;
+  font-family: var(--header-font);
+  color: transparent;
+}
