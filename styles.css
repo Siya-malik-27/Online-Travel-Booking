@@ -401,3 +401,8 @@ header_container .input_group {
   font-family: var(--header-font);
   color: var(--text-light);
 }
+
+.subscribe {
+  padding-block: 5rem;
+  background-color: var(--primary-color-dark);
+}
