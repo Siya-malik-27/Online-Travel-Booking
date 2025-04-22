@@ -406,3 +406,9 @@ header_container .input_group {
   padding-block: 5rem;
   background-color: var(--primary-color-dark);
 }
+
+.subscribe__container {
+  display: gird;
+  gap: 2rem;
+  text-align: cetner;
+}
