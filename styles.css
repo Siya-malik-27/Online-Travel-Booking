@@ -289,7 +289,7 @@ header_container .input_group {
 
 .discount {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("asset/discount.jpg");
+    url("assets/discount.jpg");
   background-size: 200%;
   background-position: top left;
   background-repeat: repeat;
