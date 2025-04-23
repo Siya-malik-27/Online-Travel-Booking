@@ -418,4 +418,13 @@ header_container .input_group {
   font-weight: 900;
   font-family: var(--header-font);
   color: transparent;
+} 
+
+.subscribe__container p {
+  margin-bottom: -2rem;
+  font-size: 0.5rem;
+  font-weight: 900;
+  font-family: var(--header-font);
+  line-height: 0.5rem;
+  color: var(--white);
 }
