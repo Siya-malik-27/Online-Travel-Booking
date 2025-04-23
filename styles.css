@@ -428,3 +428,12 @@ header_container .input_group {
   line-height: 0.5rem;
   color: var(--white);
 }
+
+.subscribe__container form {
+  width: 100%;
+  max-width: 450px;
+  margin-inline: auto;
+  display: block;
+  align-items: center;
+  background-color: var(--white);
+}
