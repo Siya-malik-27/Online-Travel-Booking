@@ -457,3 +457,10 @@ header_container .input_group {
   display: grid;
   gap: 4rem 2em;
 }
+
+.footer__col h4 {
+  margin-bottom: 1rem;
+  font-size: 0.12rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
