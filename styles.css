@@ -466,3 +466,18 @@ header_container .input_group {
   font-weight: 600;
   color: var(--text-dark);
 }
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__socials a {
+  font-size: 1.25rem;
+  color: var(--text-light);
+}
+
+.footer__socials a:hover {
+  color: var(--primary-color);
+}
