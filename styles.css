@@ -453,9 +453,11 @@ header_container .input_group {
   gap: 4rem 2em;
 }
 
-.footer__container {
-  display: grid;
-  gap: 4rem 2em;
+.footer__col p {
+  margin-block: 1rem;
+  font-family: var(--header-font);
+  color: var(--text-light);
+  line-height: 1.5rem;
 }
 
 .footer__col h4 {
