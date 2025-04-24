@@ -312,17 +312,17 @@ header_container .input_group {
 }
 
 .package__grid {
-  margin-top: -2rem;
-  display: flex;
-  gap: 0;
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .package__card {
-  box-shadow: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .package_card_details {
-  padding: 0;
+  padding: 1rem;
 }
 
 .package_card_details h4 {
