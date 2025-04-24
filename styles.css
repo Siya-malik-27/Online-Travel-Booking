@@ -472,3 +472,8 @@ header_container .input_group {
   align-items: center;
   gap: 1rem;
 }
+
+.footer__socials a {
+  font-size: 1.25rem;
+  color: var(--text-light);
+}
