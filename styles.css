@@ -408,9 +408,9 @@ header_container .input_group {
 }
 
 .subscribe__container {
-  display: gird;
+  display: grid;
   gap: 2rem;
-  text-align: cetner;
+  text-align: center;
 }
 
 .subscribe__container h2 {
