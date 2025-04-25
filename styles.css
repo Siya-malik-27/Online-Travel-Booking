@@ -495,3 +495,10 @@ header_container .input_group {
 .footer__links a:hover {
   color: var(--primary-color);
 }
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-align: center;
+}
