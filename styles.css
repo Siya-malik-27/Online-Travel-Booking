@@ -507,3 +507,7 @@ header_container .input_group {
   .feature__container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .destination__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
