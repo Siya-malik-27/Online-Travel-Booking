@@ -481,3 +481,8 @@ header_container .input_group {
 .footer__socials a:hover {
   color: var(--primary-color);
 }
+
+.footer__links {
+  display: grid;
+  gap: 1rem;
+}
