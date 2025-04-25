@@ -491,3 +491,7 @@ header_container .input_group {
   font-family: var(--header-font);
   color: var(--text-light);
 }
+
+.footer__links a:hover {
+  color: var(--primary-color);
+}
