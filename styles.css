@@ -105,7 +105,7 @@ nav {
   border-bottom: 1px solid var(--text-light);
 }
 
-.nav_menu_btn {
+.nav__menu__btn {
   font-size: 1.5rem;
   color: var(--text-dark);
   cursor: pointer;
@@ -180,14 +180,14 @@ header {
   flex-wrap: wrap;
 }
 
-header_container .input_group {
+header__container .input__group {
   flex: 1 1 200px;
   display: flex;
   align-items: center;
   background-color: var(--white);
 }
 
-.header_container .input_group span {
+.header__container .input__group span {
   padding: 6px 10px;
   font-size: 1.25rem;
   color: var(--light-text);
@@ -283,7 +283,7 @@ header_container .input_group {
   transition: opacity 1s ease-in-out;
 }
 
-.destination_card:hover .destination_content {
+.destination__card:hover .destination__content {
   opacity: 0.5;
 }
 
@@ -321,24 +321,24 @@ header_container .input_group {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 }
 
-.package_card_details {
+.package__card__details {
   padding: 1rem;
 }
 
-.package_card_details h4 {
+.package__card__details h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
-.package_card_details p {
+.package__card__details p {
   margin-bottom: 2rem;
   color: var(--text-light);
   line-height: 1.5rem;
 }
 
-.package_card_details > div {
+.package__card__details > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -346,7 +346,7 @@ header_container .input_group {
   flex-wrap: wrap;
 }
 
-.package_card_details h3 {
+.package__card__details h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
