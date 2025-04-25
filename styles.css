@@ -502,3 +502,8 @@ header_container .input_group {
   color: var(--text-light);
   text-align: center;
 }
+
+@media (width > 540px) {
+  .feature__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
