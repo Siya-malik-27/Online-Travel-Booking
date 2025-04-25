@@ -510,4 +510,6 @@ header_container .input_group {
   .destination__grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+  .package__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
