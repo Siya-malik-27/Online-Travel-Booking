@@ -433,7 +433,7 @@ header__container .input__group {
   width: 100%;
   max-width: 450px;
   margin-inline: auto;
-  display: block;
+  display: flex;
   align-items: center;
   background-color: var(--white);
 }
