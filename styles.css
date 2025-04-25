@@ -288,15 +288,15 @@ header_container .input_group {
 }
 
 .discount {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("assets/discount.jpg");
-  background-size: 200%;
-  background-position: top left;
-  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .discount__container {
-  text-align: justify;
+  text-align: center;
 }
 
 .discount__container h2 {
@@ -421,11 +421,11 @@ header_container .input_group {
 } 
 
 .subscribe__container p {
-  margin-bottom: -2rem;
-  font-size: 0.5rem;
-  font-weight: 900;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 200;
   font-family: var(--header-font);
-  line-height: 0.5rem;
+  line-height: 1.75rem;
   color: var(--white);
 }
 
