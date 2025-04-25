@@ -486,3 +486,8 @@ header_container .input_group {
   display: grid;
   gap: 1rem;
 }
+
+.footer__links a {
+  font-family: var(--header-font);
+  color: var(--text-light);
+}
