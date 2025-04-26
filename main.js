@@ -67,3 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Handle "Join Us" button
+const joinUsBtn = document.querySelector(".discount__btn .btn");
+
+if (joinUsBtn) {
+  joinUsBtn.addEventListener("click", () => {
+    alert("🎉 Thanks for your interest! A special summer discount will be sent to your email soon.");
+    // Optionally: trigger a signup modal or redirect to a registration page
+    });
+  }
