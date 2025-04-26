@@ -447,7 +447,7 @@ header__container .input__group {
   border: none;
   font-size: 1rem;
   color: var(--text-dark);
-  background-color: var(--primary-color-dark);
+  
 }
 
 .footer__container {
