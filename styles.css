@@ -416,9 +416,9 @@ header_container .input_group {
 
 .subscribe__container h2 {
   font-size: 2.75rem;
-  font-weight: 900;
+  font-weight: 200;
   font-family: var(--header-font);
-  color: transparent;
+  color: var(--white);
 } 
 
 .subscribe__container p {
