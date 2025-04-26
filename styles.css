@@ -274,17 +274,18 @@ header__container .input__group {
   inset: 0;
   display: grid;
   place-content: center;
-  font-size: 0.75rem;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--white);
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: 0.3s;
 }
 
-.destination__card:hover .destination__content {
-  opacity: 0.5;
+
+.destination_card:hover .destination_content {
+  opacity: 1;
 }
 
 .discount {
@@ -503,6 +504,7 @@ header__container .input__group {
   text-align: center;
 }
 
+
 @media (width > 540px) {
   .feature__container {
     grid-template-columns: repeat(2, 1fr);
@@ -588,3 +590,4 @@ header__container .input__group {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
