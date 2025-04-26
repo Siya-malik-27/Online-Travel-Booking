@@ -36,26 +36,41 @@
       <div class="section__container header__container">
         <h1>TRAVELLER<br /><span>FOR LIFE.</span></h1>
         <p>Live your best moments</p>
-        <form action="/">
+       <form action="/" id="search-form">
           <div class="input__group">
             <span><i class="ri-map-2-fill"></i></span>
-            <input type="text" placeholder="Where are you going?" />
+            <select>
+              <option value="">Select Destination</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Laos">Laos</option>
+              <option value="Singapore">Singapore</option>
+            </select>
           </div>
           <div class="input__group">
             <span><i class="ri-map-pin-2-fill"></i></span>
-            <input type="text" placeholder="Location" />
+            <select>
+              <option value="">Select Location</option>
+              <option value="Bangkok">Bangkok</option>
+              <option value="Luang Prabang">Luang Prabang</option>
+              <option value="Marina Bay">Marina Bay</option>
+            </select>
           </div>
           <div class="input__group">
             <span><i class="ri-list-ordered-2"></i></span>
-            <input type="text" placeholder="Tour type" />
+            <select>
+              <option value="">Select Tour Type</option>
+              <option value="City Tour">City Tour</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Culture">Culture</option>
+            </select>
           </div>
           <div class="input__group">
             <button class="btn">Search</button>
           </div>
-        </form>
+        </form> 
       </div>
     </header>
-  <section class="section_container feature_container" id="service">
+  <section class="section__container feature__container" id="service">
       <div class="feature__card">
         <img src="assets/feature-1.png" alt="feature" />
         <div>
@@ -79,7 +94,7 @@
       </div>
     </section>
   <section class="destination" id="destination">
-      <div class="section_container destination_container">
+      <div class="section__container destination__container">
         <h2 class="section__header">Top Destinations</h2>
         <p class="section__description">
           Find out what are the best destinations in the world
@@ -110,9 +125,9 @@
           <button class="btn">Join Us</button>
         </div>
       </div>
-    </section
+  </section>
 
- <section class="section_container package_container" id="package">
+ <section class="section__container package__container" id="package">
       <h2 class="section__header">Featured Packages</h2>
       <p class="section__description">
         We will help you find the trip that's perfect for you!
@@ -134,7 +149,7 @@
         </div>   
         <div class="package__card">
           <img src="assets/package-2.jpg" alt="package" />
-          <div class="package_card_details">
+          <div class="package__card__details">
             <h4>Laos City Tour</h4>
             <p>
               Immerse yourself in the rich culture and stunning landscapes of
@@ -162,7 +177,7 @@
         </div>
       </div>
     </section>
-  <section class="section_container client_container" id="client">
+  <section class="section__container client__container" id="client">
       <h2 class="section__header">Client Reviews</h2>
       <p class="section__description">
         We have many happy customers who booked holidays with us
@@ -238,7 +253,7 @@
     </section>
 
     <section class="subscribe">
-      <div class="section_container subscribe_container">
+      <div class="section__container subscribe__container">
         <h2>Subscribe to our newsletter for updates</h2>
         <div>
           <p>For the best recommendation of your. Please subscribe us.</p>
@@ -251,7 +266,7 @@
     </section>
 
   <footer class="footer">
-      <div class="section_container footer_container">
+      <div class="section__container footer__container">
         <div class="footer__col">
           <div class="footer__logo">
             <a href="#" class="logo">Travel<span>Dream</span></a>
