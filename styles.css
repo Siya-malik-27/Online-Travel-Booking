@@ -105,7 +105,7 @@ nav {
   border-bottom: 1px solid var(--text-light);
 }
 
-.nav_menu_btn {
+.nav__menu__btn {
   font-size: 1.5rem;
   color: var(--text-dark);
   cursor: pointer;
@@ -180,14 +180,14 @@ header {
   flex-wrap: wrap;
 }
 
-header_container .input_group {
+header__container .input__group {
   flex: 1 1 200px;
   display: flex;
   align-items: center;
   background-color: var(--white);
 }
 
-.header_container .input_group span {
+.header__container .input__group span {
   padding: 6px 10px;
   font-size: 1.25rem;
   color: var(--light-text);
@@ -283,20 +283,21 @@ header_container .input_group {
   transition: 0.3s;
 }
 
+
 .destination_card:hover .destination_content {
   opacity: 1;
 }
 
 .discount {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("assets/discount.jpg");
-  background-size: 200%;
-  background-position: top left;
-  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .discount__container {
-  text-align: justify;
+  text-align: center;
 }
 
 .discount__container h2 {
@@ -321,24 +322,24 @@ header_container .input_group {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 }
 
-.package_card_details {
+.package__card__details {
   padding: 1rem;
 }
 
-.package_card_details h4 {
+.package__card__details h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
-.package_card_details p {
+.package__card__details p {
   margin-bottom: 2rem;
   color: var(--text-light);
   line-height: 1.5rem;
 }
 
-.package_card_details > div {
+.package__card__details > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -346,7 +347,7 @@ header_container .input_group {
   flex-wrap: wrap;
 }
 
-.package_card_details h3 {
+.package__card__details h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -421,11 +422,11 @@ header_container .input_group {
 } 
 
 .subscribe__container p {
-  margin-bottom: -2rem;
-  font-size: 0.5rem;
-  font-weight: 900;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 200;
   font-family: var(--header-font);
-  line-height: 0.5rem;
+  line-height: 1.75rem;
   color: var(--white);
 }
 
@@ -433,7 +434,7 @@ header_container .input_group {
   width: 100%;
   max-width: 450px;
   margin-inline: auto;
-  display: block;
+  display: flex;
   align-items: center;
   background-color: var(--white);
 }
@@ -502,3 +503,91 @@ header_container .input_group {
   color: var(--text-light);
   text-align: center;
 }
+
+
+@media (width > 540px) {
+  .feature__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .destination__grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+  .package__grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (width > 1024px) {
+  .destination__grid {
+    gap: 2rem;
+  }
+
+  .package__grid {
+    gap: 2rem;
+  }
+}
+
+@media (width > 768px) {
+  nav {
+    position: static;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav__header {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav_menu_btn {
+    display: none;
+  }
+
+  .nav__links {
+    position: static;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3rem;
+    background-color: transparent;
+    transform: none;
+    border: none;
+  }
+
+  .feature__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .destination__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .package__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .subscribe__container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .subscribe__container form {
+    margin-inline-start: unset;
+  }
+
+  .subscribe__container p {
+    max-width: 400px;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
