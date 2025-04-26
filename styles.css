@@ -274,17 +274,17 @@ header_container .input_group {
   inset: 0;
   display: grid;
   place-content: center;
-  font-size: 0.75rem;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--white);
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: 0.3s;
 }
 
 .destination_card:hover .destination_content {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .discount {
