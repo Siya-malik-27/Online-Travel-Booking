@@ -26,7 +26,7 @@
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
   font-weight: 600;
-  columns: var(--text-dark);
+  color: var(--text-dark);
   text-align: center;
 }
 .section__description {
@@ -144,7 +144,7 @@ nav {
   color: var(--primary-color);
 }
 
-header {
+.header {
   padding-block: 5rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("assets/header.jpg");
@@ -180,7 +180,7 @@ header {
   flex-wrap: wrap;
 }
 
-header__container .input__group {
+.header__container .input__group {
   flex: 1 1 200px;
   display: flex;
   align-items: center;
@@ -190,7 +190,7 @@ header__container .input__group {
 .header__container .input__group span {
   padding: 6px 10px;
   font-size: 1.25rem;
-  color: var(--light-text);
+  color: var(--white);
   background-color: var(--text-dark);
 }
 
@@ -464,7 +464,7 @@ header__container .input__group {
 
 .footer__col h4 {
   margin-bottom: 1rem;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
@@ -547,7 +547,7 @@ header__container .input__group {
     border: none;
   }
 
-  .nav_menu_btn {
+  .nav__menu__btn {
     display: none;
   }
 
