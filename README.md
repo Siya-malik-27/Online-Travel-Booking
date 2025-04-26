@@ -29,3 +29,14 @@ Welcome to **TravelDream**, a simple and intuitive web platform for booking flig
 -  JavaScript 
 ---
 
+## 👥 Contributors
+
+| Name             | Responsibility         |
+| ---------------- | ----------------------- |
+| **Siya Malik**   | Manager |
+| **Ridhi Jain**   | Developer |
+| **Ojasi Sharma** | Developer |
+| **Simran**       | Developer |
+| **Raghav**       | Developer |
+
+---
