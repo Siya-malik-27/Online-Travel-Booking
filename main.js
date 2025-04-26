@@ -54,3 +54,26 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+
+// Handle "Book Now" button clicks
+document.addEventListener("DOMContentLoaded", () => {
+  const bookButtons = document.querySelectorAll(".package__card .btn");
+
+  bookButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      alert("Booking functionality coming soon!");
+      // Replace this with actual booking logic or redirection
+    });
+  });
+});
+
+// Handle "Join Us" button
+const joinUsBtn = document.querySelector(".discount__btn .btn");
+
+if (joinUsBtn) {
+  joinUsBtn.addEventListener("click", () => {
+    alert("🎉 Thanks for your interest! A special summer discount will be sent to your email soon.");
+    // Optionally: trigger a signup modal or redirect to a registration page
+    });
+  }
