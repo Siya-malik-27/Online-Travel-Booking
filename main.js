@@ -54,3 +54,16 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+
+// Handle "Book Now" button clicks
+document.addEventListener("DOMContentLoaded", () => {
+  const bookButtons = document.querySelectorAll(".package__card .btn");
+
+  bookButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      alert("Booking functionality coming soon!");
+      // Replace this with actual booking logic or redirection
+    });
+  });
+});
