@@ -371,6 +371,7 @@ header__container .input__group {
 }
 
 .client__card img {
+  max-width: 80px;
   margin-inline: auto;
   margin-bottom: 1rem;
   border-radius: 100%;
