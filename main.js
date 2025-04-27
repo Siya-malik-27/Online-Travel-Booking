@@ -1,75 +1,17 @@
-const menuBtn = document.getElementById("menubtn");
-const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = menuBtn.querySelector("i");
-
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
-
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
-});
-
-navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-line");
-});
-
-const scrollRevealOption = {
-  distance: "50px",
-  origin: "bottom",
-  duration: 1000,
-};
-
-ScrollReveal().reveal(".header__container h1", {
-  ...scrollRevealOption,
-});
-ScrollReveal().reveal(".header__container p", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-ScrollReveal().reveal(".header__container form", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-
-ScrollReveal().reveal(".feature__card", {
-  duration: 1000,
-  interval: 500,
-});
-
-ScrollReveal().reveal(".destination__card", {
-  ...scrollRevealOption,
-  interval: 500,
-});
-
-ScrollReveal().reveal(".package__card", {
-  ...scrollRevealOption,
-  interval: 500,
-});
-
-const swiper = new Swiper(".swiper", {
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
-
-
 document.addEventListener("DOMContentLoaded", () => {
   // Menu button toggle
   const menuBtn = document.getElementById("menu-btn");
   const navLinks = document.getElementById("nav-links");
   const menuBtnIcon = menuBtn.querySelector("i");
 
-  menuBtn.addEventListener("click", (e) => {
+  menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("open");
 
     const isOpen = navLinks.classList.contains("open");
     menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
   });
 
-  navLinks.addEventListener("click", (e) => {
+  navLinks.addEventListener("click", () => {
     navLinks.classList.remove("open");
     menuBtnIcon.setAttribute("class", "ri-menu-line");
   });
@@ -80,14 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
     searchForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const selects = searchForm.querySelectorAll("select");
-      const destination = selects[0].value.trim();
-      const location = selects[1].value.trim();
-      const tourType = selects[2].value.trim();
+      const destination = selects[0]?.value.trim();
+      const location = selects[1]?.value.trim();
+      const tourType = selects[2]?.value.trim();
 
       if (!destination && !location && !tourType) {
         alert("Please select at least one option before searching.");
       } else {
-        alert(`🔍 Searching with filters:\n${destination}\n${location}\n${tourType}`);
+        alert(`🔍 Searching with filters:\n${destination ? "🌍 Destination: " + destination + "\n" : ""}${location ? "📍 Location: " + location + "\n" : ""}${tourType ? "🧭 Tour Type: " + tourType : ""}`);
       }
     });
   }
@@ -104,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const joinUsBtn = document.querySelector(".discount__btn .btn");
   if (joinUsBtn) {
     joinUsBtn.addEventListener("click", () => {
-      alert("🎉 Thanks for your interest! Discount email coming soon.");
+      alert("🎉 Thanks for your interest! A special discount will be emailed soon.");
     });
   }
 
@@ -127,4 +69,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // Initialize ScrollReveal
+  const scrollRevealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+  };
+
+  ScrollReveal().reveal(".header__container h1", { ...scrollRevealOption });
+  ScrollReveal().reveal(".header__container p", { ...scrollRevealOption, delay: 500 });
+  ScrollReveal().reveal(".header__container form", { ...scrollRevealOption, delay: 1000 });
+
+  ScrollReveal().reveal(".feature__card", { duration: 1000, interval: 500 });
+  ScrollReveal().reveal(".destination__card", { ...scrollRevealOption, interval: 500 });
+  ScrollReveal().reveal(".package__card", { ...scrollRevealOption, interval: 500 });
+
+  // Initialize Swiper
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 });
