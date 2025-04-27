@@ -56,24 +56,75 @@ const swiper = new Swiper(".swiper", {
 });
 
 
-// Handle "Book Now" button clicks
 document.addEventListener("DOMContentLoaded", () => {
-  const bookButtons = document.querySelectorAll(".package__card .btn");
+  // Menu button toggle
+  const menuBtn = document.getElementById("menu-btn");
+  const navLinks = document.getElementById("nav-links");
+  const menuBtnIcon = menuBtn.querySelector("i");
 
+  menuBtn.addEventListener("click", (e) => {
+    navLinks.classList.toggle("open");
+
+    const isOpen = navLinks.classList.contains("open");
+    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+  });
+
+  navLinks.addEventListener("click", (e) => {
+    navLinks.classList.remove("open");
+    menuBtnIcon.setAttribute("class", "ri-menu-line");
+  });
+
+  // Handle "Search" form
+  const searchForm = document.getElementById("search-form");
+  if (searchForm) {
+    searchForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const selects = searchForm.querySelectorAll("select");
+      const destination = selects[0].value.trim();
+      const location = selects[1].value.trim();
+      const tourType = selects[2].value.trim();
+
+      if (!destination && !location && !tourType) {
+        alert("Please select at least one option before searching.");
+      } else {
+        alert(`🔍 Searching with filters:\n${destination}\n${location}\n${tourType}`);
+      }
+    });
+  }
+
+  // Handle "Book Now" button clicks
+  const bookButtons = document.querySelectorAll(".package__card .btn");
   bookButtons.forEach(button => {
     button.addEventListener("click", () => {
       alert("Booking functionality coming soon!");
-      // Replace this with actual booking logic or redirection
-    });
-  });
+    });
+  });
+
+  // Handle "Join Us" button
+  const joinUsBtn = document.querySelector(".discount__btn .btn");
+  if (joinUsBtn) {
+    joinUsBtn.addEventListener("click", () => {
+      alert("🎉 Thanks for your interest! Discount email coming soon.");
+    });
+  }
+
+  // Handle "Subscribe" form
+  const subscribeForm = document.querySelector(".subscribe__container form");
+  if (subscribeForm) {
+    subscribeForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const emailInput = subscribeForm.querySelector("input");
+      const email = emailInput.value.trim();
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email) {
+        alert("📭 Please enter your email address.");
+      } else if (!emailRegex.test(email)) {
+        alert("⚠ Please enter a valid email address.");
+      } else {
+        alert(`✅ Thanks for subscribing! Updates will be sent to: ${email}`);
+        emailInput.value = "";
+      }
+    });
+  }
 });
-
-// Handle "Join Us" button
-const joinUsBtn = document.querySelector(".discount__btn .btn");
-
-if (joinUsBtn) {
-  joinUsBtn.addEventListener("click", () => {
-    alert("🎉 Thanks for your interest! A special summer discount will be sent to your email soon.");
-    // Optionally: trigger a signup modal or redirect to a registration page
-    });
-  }
